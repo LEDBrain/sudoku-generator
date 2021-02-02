@@ -1,7 +1,8 @@
-from Grid import Grid
+from Sudoku import Sudoku
 
-grid = Grid()
-print(grid)
-grid.fill()
-print('===')
-print(grid)
+if __name__ == "__main__":
+    sudoku = Sudoku()
+    print(sudoku)
+    print("===")
+    sudoku.generate_solution()
+    print(sudoku)
